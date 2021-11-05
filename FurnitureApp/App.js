@@ -4,6 +4,8 @@ import { Text, View,StyleSheet,style,Image,TouchableOpacity,onPress } from 'reac
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import Login from './Screen/Login'
+
 
 
 const Stack = createStackNavigator();
@@ -14,8 +16,8 @@ export default class App extends Component {
       <NavigationContainer>
    <Stack.Navigator>
       <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="SignUp" component={SignUp} />
-      <Stack.Screen name="Product" component={Product} />
+      {/* <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="Product" component={Product} /> */}
       {/* <Stack.Screen name="Settings" component={Settings} /> */}
     </Stack.Navigator>
     </NavigationContainer>
